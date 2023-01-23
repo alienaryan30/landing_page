@@ -22,13 +22,20 @@ body {
     margin: auto;
     padding-bottom: 20px;
 }
+.header {
+    background-color: rgba(87, 167, 115);
+    position: sticky;
+    top: 0px;
+    z-index: 9;
+    display: flex;
+    align-items: center;
+}
 header {
-    background-color: rgb(87, 167, 115);
     display: flex;
     justify-content: space-between;
     align-items: center;
     position: sticky;
-    top: 0%;
+    top: 0;
 }
 
 .logo {
@@ -253,13 +260,14 @@ header > ul .nav:not(:last-child){
     transition: all;
     transition-duration: 0.4s;
     border-radius: 10px;
+    transition: all;
+    transition-duration: 0.5s;
 }
 
 .card:hover {
-    transition: all;
-    transition-duration: 0.4s;
-    bottom : 8px;
-    box-shadow: 1px 1px 3px rgb(72, 77, 109);
+    cursor: pointer;
+    transform: translateY(-10px);
+    box-shadow: 0px 0px 3px rgb(72, 77, 109);
 }
 .icon {
     font-size: 50px;
@@ -336,12 +344,22 @@ header > ul .nav:not(:last-child){
 }
 .team{
     margin-top: 0;
-    background-color: rgb(239, 233, 244);
+    background-color: white;
 }
 .team-card {
     display: flex;
-    justify-content: space-between;
+    background-color: rgb(239, 233, 244);
+    padding: 20px;
+    border-radius: 7px;
+    justify-content: space-evenly;
     margin: 8px;
+    transition: all;
+    transition-duration: 0.5s;
+}
+.team-card:hover {
+    cursor: pointer;
+    transform: translateY(-10px);
+    box-shadow: 0px 0px 3px rgb(72, 77, 109);
 }
 .pic {
     width: 100px;
@@ -356,7 +374,181 @@ header > ul .nav:not(:last-child){
 }
 #cto-pic {
     background-image: url(/cto.jpg);
+    background-position: top;
+}
+#pm-pic {
+    background-image: url(/pm.jpg);
+}
+#cc-pic {
+    background-image: url(/cc.jpg);
 }
 
+.about {
+    width: 50%;
+}
 
+.about h3 {
+    font-weight: 600;
+    color:rgb(72, 77, 109);
+    margin:0;
+    font-size:22px;
+}
+.about h4 {
+    margin: 0;
+    font-weight: 300;
+    color: rgb(72, 77, 109);
+}
+.about p {
+    font-size: 15px;
+    font-weight: 400;
+    font-style: oblique;
+}
+.pricing{
+    background-color: rgb(239, 233, 244);
+    padding:15px;
+}
+#pricing-cont h2{
+    font-family: 'Poppins', sans-serif;
+    color: rgb(87, 167, 115);
+    font-size: 28px;
+    font-weight: 500;
+    letter-spacing: 5px;
+    text-align: center;
+}
+#pricing-cont p {
+    color:rgb(72, 77, 109);
+    font-size: 15px;
+    text-align: center;
+}
+.price-cards {
+    display: grid;
+    grid-template-columns: 30% 30% 30%;
+    justify-content: space-around;
+}
+.price-card {
+    background-color: white;
+    padding: 20px;
+    border-radius: 15px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+#business-plan {
+    border-top: 5px solid rgb(117, 223, 154);
+    background-color: rgb(245, 255, 244);
+}
+.price-card h3{
+    margin: 0;
+    color:rgb(87, 167, 115);
+    font-weight: 300;
+    text-align: center;
+    Font-size: 25px;
+}
 
+.price-card h4 {
+    margin: 5px;
+    color: rgb(117, 223, 154);
+    text-align: center;
+    font-size: 50px;
+    font-weight: 200;
+}
+
+.price-card ul > li {
+    list-style-type: none;
+    margin: 10px;
+}
+#green-check {
+    color: rgb(117, 223, 154);
+}
+#red-cross {
+    color: rgb(236, 81, 81);
+}
+.cross{
+    color:rgb(138, 135, 135);
+}
+.btn-5 {
+    width: fit-content;
+    padding: 20px;
+    background-color: white;
+    font-family: 'Poppins', sans-serif;
+    font-size: 15px;
+    border-radius: 30px;
+    border: 1px solid rgb(117, 223, 154);
+    color:rgb(117, 223, 154);
+    transition: all;
+    transition-duration: 0.2s;
+}
+.btn-5:hover {
+    background-color: rgb(87, 167, 115);
+    color: white;
+    border:rgb(87, 167, 115);
+}
+
+#busi-plan {
+    background-color: rgb(117, 223, 154);
+    color: white;
+    border:rgb(117, 223, 154);
+}
+#busi-plan:hover {
+    background-color: rgb(87, 167, 115);
+    color: white;
+    border:rgb(87, 167, 115);
+}
+#contact-cont h2 {
+    font-family: 'Poppins', sans-serif;
+    color: rgb(72, 77, 109);
+    font-size: 28px;
+    font-weight: 500;
+    letter-spacing: 5px;
+    text-align: center;
+}
+#contact-cont p{
+    font-size: 15px;
+    color: rgb(105, 103, 103);
+    text-align: center;
+}
+.contact-grid {
+    display: flex;
+    justify-content: space-around;
+}
+.contact-form, .address {
+    background-color: rgb(239, 233, 244);
+    padding: 60px;
+    border-radius: 20px;
+    border-top: 5px solid rgb(72, 77, 109);
+}
+.form, textarea {
+    font-family: 'Poppins', sans-serif;
+    background-color: rgb(239, 233, 244);
+    border: 1px solid rgb(72, 77, 109);
+    border-radius: 5px;
+    padding: 10px;
+}
+.contact-form button {
+    background-color: rgb(72, 77, 109);
+    border: 1px solid rgb(72, 77, 109);
+    font-family: 'Poppins', sans-serif;
+    border-radius: 20px;
+    color: rgb(239, 233, 244);
+    padding: 10px;
+}
+.contact-form button:hover {
+    background-color: rgb(89, 95, 136);
+}
+.form {
+    width: 90%;
+}
+.address h3 {
+    font-size: 30px;
+    color: rgb(72, 77, 109);
+    font-weight: 300;
+    margin: 0;
+}
+.address h4 {
+    font-size: 15px;
+    color: rgb(105, 103, 103);
+    font-weight: 300;
+    font-style: oblique;
+    margin:0;
+    margin-bottom: 30px;
+}
