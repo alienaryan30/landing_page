@@ -1,0 +1,362 @@
+/* Font links */
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@100;200;400;500;600;700;800;900&display=swap');
+
+/*Font family*/
+/*font-family: 'Poppins', sans-serif;*/
+
+
+
+body {
+    padding: 0;
+    margin: 0;
+    font-family: 'Poppins', sans-serif;
+}
+.section-1 {
+    background-color: rgb(87, 167, 115);
+    padding: 0;
+    margin: 0;
+}
+/* Navbar */
+.container-1 {
+    width:85%;
+    margin: auto;
+    padding-bottom: 20px;
+}
+header {
+    background-color: rgb(87, 167, 115);
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    position: sticky;
+    top: 0%;
+}
+
+.logo {
+    font-family: 'Poppins', sans-serif;
+    color: rgb(72, 77, 109);
+    font-size: 28px;
+    font-weight: 500;
+    letter-spacing: 5px;
+}
+
+header ul {
+    display: flex;
+}
+.nav {
+    list-style-type: none;
+}
+header > ul .nav:not(:last-child){
+    margin-right: 20px;
+}
+.nav a{
+    text-decoration: none;
+    color:rgb(239, 233, 244);
+    font-family: 'Poppins', sans-serif;
+    font-weight: 300;
+    font-size: 20px;
+    transition: all;
+    transition-duration: 0.3s;
+}
+.nav a:hover {
+    color: rgb(72, 77, 109);
+    font-weight: 600;
+}
+.btn-1{
+    color: rgb(239, 233, 244);
+    background-color: rgb(87, 167, 115);
+    border: 1px solid rgb(239, 233, 244);
+    border-radius: 20px;
+    font-family: 'Poppins', sans-serif;
+    font-weight: 300;
+    font-size: 20px;
+    transition: all;
+    transition-duration: 0.3s;
+}
+#get-started .btn-1:hover{
+    color: rgb(87, 167, 115);
+    background-color: rgb(239, 233, 244);
+    font-weight: 300;
+    box-shadow: 0px 0px 2px rgb(72, 77, 109);
+
+}
+#home a {
+    color:rgb(72, 77, 109);
+    font-weight: 600;
+}
+#cont-1 {
+    display:flex;
+    justify-content: space-between;
+}
+.right h1 {
+    font-family: 'Poppins', sans-serif;
+    color: rgb(239, 233, 244);
+    font-size: 48px;
+    letter-spacing: -3px;
+}
+.right h1 span{
+    color: rgb(72, 77, 109);
+}
+.right p {
+    font-family: 'Poppins', sans-serif;
+    color: rgb(239, 233, 244);
+    font-size: 18px;
+}
+.right .btn-1 {
+    color: rgb(87, 167, 115);
+    background-color: rgb(239, 233, 244);
+    font-weight: 300;
+    box-shadow: 0px 0px 2px rgb(72, 77, 109);
+}
+.right .btn-1:hover {
+    background-color: rgb(72, 77, 109);
+    color:rgb(239, 233, 244);
+}
+.left{
+    display: flex;
+    justify-content:flex-end;
+    align-items: center;
+}
+.left img {
+    width:500px;
+    height: 500px;
+}
+.section-2 h2{
+    color: rgb(87, 167, 115);
+    font-size: 28px;
+    font-weight: 500;
+    letter-spacing: 5px;
+    text-align: center;
+}
+#para-about-us {
+    color: rgb(72, 77, 109);
+    font-weight: 00;
+}
+.btn-2 {
+    
+    color: rgb(87, 167, 115);
+    display:block;
+    width: fit-content;
+    padding: 5px;
+    border:  2px solid rgb(87, 167, 115);
+    margin: auto;
+    border-radius: 10px;
+    background-color: white;
+    font-family: 'Poppins', sans-serif;
+    transition: all;
+    transition-duration: 0.3s;
+}
+.btn-2:hover {
+    background-color: rgb(87, 167, 115);
+    color: white;
+}
+
+
+/* section 3*/
+.section-3{
+    background-color: rgb(239, 233, 244);
+}
+#cont-2 {
+    display:flex;
+    justify-content: space-between;
+}
+.section-3-right{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.section-3-right img {
+    width: 500px;
+    height: 500px;
+}
+
+.section-3-left h2{
+    color:rgb(87, 167, 115);
+    font-size: 28px;
+    font-weight: 300;
+    text-transform: capitalize;
+}
+.section-3-left p{
+    color: rgb(105, 103, 103);
+}
+.bolder {
+    font-weight: 500;
+    letter-spacing: -2px;
+}
+.q {
+    background-color: white;
+    margin-top: 10px;
+    list-style-position: inside;
+    list-style-type: decimal;
+    padding: 10px;
+    font-size: 15px;
+    color: #08B2E3;
+    font-weight: 500;
+    border-radius: 10px;
+}
+.answer {
+    font-weight: 300;
+    color: black;
+}
+
+/*section-4*/
+#cont-3 {
+    display:flex;
+    justify-content: space-between;
+    align-items: center;
+}
+.section-4-left {
+    align-items: center;   
+}
+.section-4-left img{
+    width: 500px;
+}
+.section-4-right h2 {
+    color:rgb(87, 167, 115);
+    font-size: 30px;
+    font-weight: 200;
+    text-transform: capitalize;
+}
+
+.section-4-right p {
+    font-size: 15px;
+    color:rgb(72, 77, 109);
+}
+.section-5 {
+    background-color: rgb(239, 233, 244);
+    padding: 10px;
+    margin-bottom: 0;
+}
+.services {
+    font-family: 'Poppins', sans-serif;
+    color: rgb(87, 167, 115);
+    font-size: 28px;
+    font-weight: 500;
+    letter-spacing: 5px;
+    text-align: center;
+}
+.section-5 p{
+    text-align: center;
+    font-size: 15px;
+}
+
+
+.cards {
+    display: grid;
+    grid-template-columns: auto auto;
+}
+
+.card {
+    background-color: white;
+    margin: 10px;
+    padding: 20px;
+    position: relative;
+    transition: all;
+    transition-duration: 0.4s;
+    border-radius: 10px;
+}
+
+.card:hover {
+    transition: all;
+    transition-duration: 0.4s;
+    bottom : 8px;
+    box-shadow: 1px 1px 3px rgb(72, 77, 109);
+}
+.icon {
+    font-size: 50px;
+    color:rgb(87, 167, 115);
+}
+
+.tit {
+    font-size: 25px;
+    font-weight: 500;
+    color: rgb(117, 223, 154);
+    transition: all;
+    transition-duration: 0.3s;
+}
+.tit:hover {
+    color: rgb(87, 167, 115);
+    cursor: pointer;
+}
+
+.call-to-action {
+    background-image: url(/background.jpg);
+    background-attachment: fixed;
+    background-size: cover;
+    background-position: center;
+    margin-bottom: 0;
+}
+#cont-cta {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+.call-to-action{
+    padding: 0;
+}
+.colour {
+    padding: 100px;
+    margin: 0;
+    background-color: rgba(72, 77, 109, 0.9);
+}
+.call-to-action-left{
+    width: 75%;
+}
+.call-to-action-left h1 {
+    color: rgb(239, 233, 244);
+}
+.call-to-action-left p {
+    font-size: 15px;
+    color: rgb(239, 233, 244)
+}
+.call-to-action-right button{
+    font-family: 'Poppins', sans-serif;
+    background:none;
+    color:rgb(239, 233, 244);
+    border-radius: 20px;
+    border: 2px solid rgb(239, 233, 244);
+    font-size: 17px;
+    transition: all;
+    transition-duration: 0.3s;
+}
+.call-to-action-right button:hover{
+    cursor: pointer;
+    background-color: rgb(239, 233, 244);
+    color: rgb(72, 77, 109);
+}
+#team h1{
+    font-family: 'Poppins', sans-serif;
+    color: rgb(72, 77, 109);
+    font-size: 28px;
+    font-weight: 500;
+    letter-spacing: 5px;
+    text-align: center;
+}
+#team p{
+    font-size : 15px;
+}
+.team{
+    margin-top: 0;
+    background-color: rgb(239, 233, 244);
+}
+.team-card {
+    display: flex;
+    justify-content: space-between;
+    margin: 8px;
+}
+.pic {
+    width: 100px;
+    height: 100px;
+    border-radius: 50%;
+    overflow: hidden;
+    background-position: center;
+    background-size: cover;
+}
+#ceo-pic {
+    background-image: url(/ce.jpg);
+}
+#cto-pic {
+    background-image: url(/cto.jpg);
+}
+
+
+
